@@ -166,7 +166,7 @@ int flowResponse()
 int inputInteger(string param)
 {
     int a;
-    cout << "Enter your";
+    cout << "Enter your " + param + ": ";
     cin >> a;
     return a;
 }
@@ -194,29 +194,30 @@ void addNumbers()
     cin >> num;
     for (int i = 0; i < num; i++)
     {
+        cout << "Enter the next number: ";
         cin >> numbers;
         sum = sum + numbers;
         cout << "Preview sum is: "<< sum << endl;
     }
-    cout << "The sum is:" << sum << endl;
+    cout << "The final sum is: " << sum << endl;
 }
 void subractNumbers()
 {
     int a, b;
     tie(a, b) = inputIntegers();
-    cout << "The difference of the Numbers is " << a - b << endl;
+    cout << "The difference of the Numbers is: " << a - b << endl;
 }
 void multiplyNumbers()
 {
     int a, b;
     tie(a, b) = inputIntegers();
-    cout << "The Product of the Numbers is " << a * b << endl;
+    cout << "The Product of the Numbers is: " << a * b << endl;
 }
 void divideNumbers()
 {
     int a, b;
     tie(a, b) = inputIntegers();
-    cout << "The Quotient of the Numbers is" << a / b << endl;
+    cout << "The Quotient of the Numbers is: " << a / b << endl;
 }
 void logofNumber()
 {
