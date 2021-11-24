@@ -28,7 +28,25 @@ void tanofAngle();
 void squareofNumber();
 void rootofNumber();
 int flowResponse();
-float toRadian();
+float toRadian(int angle);
+double toDegree(float radian);
+void log10Inverse();
+void sineInverse();
+void cosInverse();
+void tanInverse(); //atan
+void sineH();//sinh
+void cosineH();
+void TanH();
+void cosecAngle();
+void secAngle(); //use your maths concepts
+void cotanAngle();
+void naturalLog();
+void exponential(); //use exp()
+void hypotenuse();
+void manhattanDistance();
+void degtoRadian();
+void RadiantoDegree();
+void celctoFaren(); //use F =(9/5)*C + 32
 
 bool flow = true;
 int main()
@@ -92,7 +110,9 @@ void functionsList()
     cout << "\t[3] Multiplication\t\t\t[8]  Tan" << endl;
     cout << "\t[4] Division\t\t\t\t[9]  Square" << endl;
     cout << "\t[5] Logarithms\t\t\t\t[10] Square Root" << endl;
-
+    cout << "\t[11] Log Inverse\t\t\t\t[12] Sine Inverse" << endl;
+    cout << "\t[13] Cos Inverse\t\t\t\t[14] Tan Inverse" << endl;
+    cout << "\t[15] Natural Log\t\t\t\t[16] Exponential" << endl;
 }
 void calcFunctions()
 {
@@ -162,6 +182,10 @@ int flowResponse()
 
         }
     } while (c_flow == true);
+}
+float toRadian(int angle)
+{
+    return angle*PI/180;
 }
 int inputInteger(string param)
 {
@@ -252,3 +276,19 @@ void rootofNumber()
     int a = inputInteger("Number");
     cout << sqrt(a) << endl;
 }
+
+double toDegree(float radian)
+{
+    return radian * 180 / PI;
+}
+void log10Inverse() {
+    double logi;
+    cout << "Enter the value: ";
+    cin >> logi;
+    double base = 10;
+    double logi = pow(base, logi);
+    cout << "The inverse of log is: " << logi << endl;
+}
+void sineInverse();
+void cosInverse();
+void tanInverse();//use atan
